@@ -135,6 +135,8 @@ const data = [
   },
 ];
 
+// Using Quokka
+
 function getBooks() {
   return data;
 }
@@ -168,3 +170,15 @@ const updatedBook = {
   pages: 100,
 };
 updatedBook;
+
+//Template String
+const summary = `${title} is a book, a ${pages} long book, was written by ${author} and published in 
+${publicationDate.split("-")[0]}. The book has${
+  hasMovieAdaptation ? "" : "not"
+} been adapted as a movie 
+}`;
+summary;
+
+// Ternary Operator
+const pagesRange = pages > 1000 ? "over a thousand" : "Less than a thousand";
+pagesRange;
